@@ -4,7 +4,7 @@ import NavListItem from "./NavListItem";
 export default function NavBar(){
     const items = [
         {title: 'home'},
-        {title: 'products'},
+        {title: 'products', src: '/products'},
         {title: 'contact'}
     ]
 
