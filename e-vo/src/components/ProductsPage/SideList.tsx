@@ -4,9 +4,9 @@ export default function ProductsList({ products }: {
     products: any[] // type
 }){
     return (
-        <ul className="grid gap-y-[34px] gap-x-10 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 w-full">{ 
+        <ul className="grid grid-cols-1 w-fit h-[82vh] overflow-y-scroll pr-3 scroll">{ 
             products.map((product, i) => (
-                <ProductCard key={i}/>
+                <div className="scale-90"  key={i}><ProductCard/></div>
             ))
         }</ul>
     )

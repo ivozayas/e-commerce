@@ -12,21 +12,21 @@ export default function ProductContainer({ images, id, icon }: {
     const [displayImage, setDisplayImage] = useState(images[0])
 
     return (
-        <div
+        <Link
+            href={`/products/${id}`}
             className="bg-white hover:shadow-sm shadow-md h-60 flex justify-center items-center rounded-sm duration-100 overflow-hidden"
             onMouseEnter={() => images.length > 1 && setDisplayImage(images[1])}
             onMouseLeave={() => setDisplayImage(images[0])}
         >
             { icon }
-            <Link href={`/products/${id}`}>
-                <Image
-                    alt="sneakers"
-                    width={180}
-                    height={180}
-                    src={displayImage}
-                    priority
-                />
-            </Link>
-        </div>
+
+            <Image
+                alt="sneakers"
+                width={180}
+                height={180}
+                src={displayImage}
+                priority
+            />
+        </Link>
     )
 }

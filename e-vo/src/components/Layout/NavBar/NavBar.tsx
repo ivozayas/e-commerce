@@ -9,7 +9,7 @@ export default function NavBar(){
     ]
 
     return (
-        <div className="h-10 shadow-md bg-white flex flex-row items-center justify-between">
+        <div className="h-10 shadow-md bg-white flex flex-row fixed top-0 w-full items-center justify-between">
             <div className="flex flex-row items-center ">
                 <h1 className="font-bold px-6">E-VO</h1>
                 <NavListItem items={items}/>

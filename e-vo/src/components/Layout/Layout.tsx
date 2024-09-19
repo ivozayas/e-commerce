@@ -7,7 +7,7 @@ export default function Layout({ children }: {
         <div className="">
             <NavBar/>
 
-            <div className="h-full p-6">
+            <div className="h-full px-6 pt-16">
                 { children }
             </div>
         </div>

@@ -7,14 +7,14 @@ export default function ProductCard({ children }: {
 }){
     const product = {
         id: 'apsodaposkdas',
-        name: "OASIS 2 Navy",
+        name: "OASIS 2",
         price: 90,
         categories: [
             { text: 'clothes'},
             { text: 'sports' },
             { text: '' }
         ],
-        colors: ['red', 'grey'],
+        colors: ['red', 'gray'],
         images: [
             '/sneakers.jpg',
             '/sneakers-secondary.jpg'

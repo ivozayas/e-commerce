@@ -5,7 +5,7 @@ export default function ListItemWithIcon({ icon, text }: {
     return (
         <div className="flex flex-row items-center space-x-2">
             { icon }
-            <p className="text-sm text-slate-500">{ text }</p>
+            <p className="text-xs text-slate-500">{ text }</p>
         </div>
     )
 }
