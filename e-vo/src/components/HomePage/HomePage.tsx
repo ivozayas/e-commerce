@@ -1,10 +1,10 @@
 import PageContainer from "../Pages/PageContainer";
 import PageHeader from "../Pages/PageHeader";
 
-export default function ShopPage(){
+export default function HomePage(){
     return (
         <PageContainer>
-            <div className="bg-white h-full rounded-lg shadow-md p-6 scroll-y-auto">
+            <div className="bg-white h-full rounded-sm shadow-md p-6 scroll-y-auto">
                 <PageHeader title="Home"/>
             </div>
         </PageContainer>

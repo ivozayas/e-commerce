@@ -5,20 +5,26 @@ import ProductDescription from "./ProductDescription"
 export default function ProductCard({ children }: {
     children?: React.ReactNode
 }){
-    const categories = [
-        { text: 'clothes'},
-        { text: 'sports' }
-    ]
-
-    const colors = [
-        { text: 'red', icon: <ColorIcon color="red"/>},
-        { text: 'white', icon: <ColorIcon color="white"/>}
-    ]
+    const product = {
+        id: 'apsodaposkdas',
+        name: "OASIS 2 Navy",
+        price: 90,
+        categories: [
+            { text: 'clothes'},
+            { text: 'sports' },
+            { text: '' }
+        ],
+        colors: ['red', 'grey'],
+        images: [
+            '/sneakers.jpg',
+            '/sneakers-secondary.jpg'
+        ]
+    }
 
     return (
-        <div className="h-fit w-60 p-4 m-2 space-y-3 hover:scale-105 duration-100 hover:shadow-lg rounded-md">
-            <ProductContainer/>
-            <ProductDescription name="Puma Shoes 24 AXION" price={0} colors={colors} categories={categories} />
+        <div className="h-fit w-52 space-y-3 hover:scale-105 duration-100 rounded-md">
+            <ProductContainer images={product.images} id={product.id}/>
+            <ProductDescription name={product.name} id={product.id} price={product.price} colors={product.colors} categories={product.categories} />
             { children }
         </div>
     )

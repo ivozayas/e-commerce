@@ -8,8 +8,8 @@ export default function Searcher(){
 
     return (
         <div className="mx-4">
-            <form className="text-sm" onSubmit={handleSubmit((data) => console.log(data))}>
-                <input className="px-1 py-0.5" type="text" id="search" {...register('search')} placeholder="Search a product..."/>
+            <form className="text-sm" onSubmit={handleSubmit((data) => console.log(data))}> {/* navegate to /search/${data} */}
+                <input className="px-1 py-0.5" type="text" id="search" {...register('search')} placeholder="Search..."/>
 
                 <button className="right-5 top-[1.5px] relative" type="submit"><BiSearch/></button>
             </form>

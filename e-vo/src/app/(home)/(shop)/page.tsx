@@ -1,7 +1,7 @@
-import ShopPage from "@/components/ShopPage/ShopPage";
+import HomePage from "@/components/HomePage/HomePage";
 
 export default function Home() {
   return (
-    <ShopPage/>
+    <HomePage/>
   );
 }
