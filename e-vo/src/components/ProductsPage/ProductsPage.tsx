@@ -14,7 +14,7 @@ export default function ProductsPage({}){
                     </div>
 
                     <ProductListContainer title="Products">
-                        <ProductsList products={[1,2,3,4,5]}/>
+                        <ProductsList products={[1,2,3,4,5,1,2,3,4,5]}/>
                     </ProductListContainer>
                 </div>
                 

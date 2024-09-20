@@ -1,3 +1,5 @@
+import ProductPage from "@/components/ProductPage/ProductPage";
+
 export default function Page(){
-    return <div>hola</div>
+    return <ProductPage/>
 }

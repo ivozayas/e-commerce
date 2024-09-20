@@ -5,7 +5,7 @@ import ProductDescription from "./ProductDescription"
 export default function ProductCard({ children }: {
     children?: React.ReactNode
 }){
-    const product = {
+    const product: Product = {
         id: 'apsodaposkdas',
         name: "OASIS 2",
         price: 90,
@@ -23,7 +23,7 @@ export default function ProductCard({ children }: {
 
     return (
         <div className="h-fit w-52 space-y-3 hover:scale-105 duration-100 rounded-md">
-            <ProductContainer images={product.images} id={product.id}/>
+            <ProductContainer images={product.images.slice(0,2)} id={product.id}/>
             <ProductDescription name={product.name} id={product.id} price={product.price} colors={product.colors} categories={product.categories} />
             { children }
         </div>

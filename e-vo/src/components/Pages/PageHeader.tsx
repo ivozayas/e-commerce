@@ -4,7 +4,7 @@ export default function PageHeader({ title, children }: {
 }){
     return (
         <div>
-            <h1 className="text-[1.5rem] font-bold">{title.toLowerCase()}</h1>
+            <h1 className="text-[1.5rem] font-bold">{title}</h1>
 
             {children}
         </div>

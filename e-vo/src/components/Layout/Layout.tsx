@@ -4,7 +4,7 @@ export default function Layout({ children }: {
     children: React.ReactNode
 }){
     return (
-        <div className="">
+        <div>
             <NavBar/>
 
             <div className="h-full px-6 pt-16">
