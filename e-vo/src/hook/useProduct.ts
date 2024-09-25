@@ -3,8 +3,8 @@ export const product: Product = {
     name: "OASIS 2",
     brand: 'Manzino',
     price: 90,
-    categories: [ 'sneakers', 'sport' ],
-    colors: ['red', 'gray'],
+    categories: [ 'sneakers', 'sport', 'shoes' ],
+    colors: ['red', 'gray', 'blue'],
     images: [
         '/sneakers-1.jpg',
         '/sneakers-2.jpg',
