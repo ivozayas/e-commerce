@@ -35,6 +35,7 @@ export default function ProductLargeDescription({ name, colors, categories, pric
             
                     <ListWithIcon items={categories.map((category) => ({ text: category}))}/>
                 </div>
+                
             </div>
 
             <SizeGrid sizes={sizes}/>       

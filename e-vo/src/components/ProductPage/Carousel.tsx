@@ -36,15 +36,20 @@ export default function Carousel({ images }: {
     }, [scrollPrev, scrollNext])
 
     return (
-        <div className='embla h-fit w-[700px] shadow-md rounded-sm' ref={emblaRef}>
+        <div className='embla h-fit w-[710px] shadow-md rounded-sm' ref={emblaRef}>
             <ul className='embla__container'>{
                 images.map((image, i) => (
-                    <div className='embla__slide w-fit h-fit' key={i}><Image src={image} alt={`image-${i}`} width={700} height={300}/></div>
+                    <div className='embla__slide w-fit h-fit' key={i}><Image src={image} alt={`image-${i}`} width={710} height={300}/></div>
                 ))
             }</ul>
 
-            <button className='absolute top-[45%] left-5 duration-100 hover:scale-110' onClick={scrollPrev}><FiChevronLeft color='#475569' size={40}/></button>
-            <button className='absolute top-[45%] left-[685px] duration-100 hover:scale-110' onClick={scrollNext}><FiChevronRight  color='#475569' size={40}/></button>
+            <button className='absolute top-[50%] left-5 duration-100 hover:scale-125' onClick={scrollPrev}>
+                <FiChevronLeft color='#94a3b8' size={40}/>
+            </button>
+
+            <button className='absolute top-[50%] left-[700px] duration-100 hover:scale-125' onClick={scrollNext}>
+                <FiChevronRight  color='#94a3b8' size={40}/>
+            </button>
         </div>
     )
 }

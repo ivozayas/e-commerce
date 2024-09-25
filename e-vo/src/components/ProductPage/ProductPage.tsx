@@ -9,7 +9,6 @@ import PageContainer from '../Pages/PageContainer'
 import SideList from '../ProductsPage/SideList'
 import ProductListContainer from '../ProductsPage/ProductListContainer'
 import { product } from '@/hook/useProduct'
-import AddToCartButton from './AddToCartButton'
 import BuyButtons from './BuyButtons'
 
 export default function ProductPage(){

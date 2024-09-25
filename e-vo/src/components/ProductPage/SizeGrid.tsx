@@ -11,7 +11,9 @@ export default function SizeGrid({ sizes }: {
         <div className="space-y-6">
             <ul className="grid grid-cols-5 gap-3">{
                 sizes.map((size, i) => (
-                    <SizeItem size={size} selectSize={setSelectedSize} selectedSize={selectedSize} key={i}/>
+                    <SizeItem size={size} selectSize={setSelectedSize} selectedSize={selectedSize} key={i}>
+                        { size.size }
+                    </SizeItem>
                 ))
             }</ul>
 

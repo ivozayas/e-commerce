@@ -14,7 +14,7 @@ export default function ProductContainer({ images, id, icon }: {
     return (
         <Link
             href={`/products/${id}`}
-            className="bg-white hover:shadow-sm shadow-md h-60 flex justify-center items-center rounded-sm duration-100 overflow-hidden"
+            className="bg-white hover:shadow shadow-md h-60 flex justify-center items-center rounded-sm duration-100 overflow-hidden"
             onMouseEnter={() => images.length > 1 && setDisplayImage(images[1])}
             onMouseLeave={() => setDisplayImage(images[0])}
         >

@@ -7,7 +7,7 @@ export default function ListWithIcon({ items, small }: {
     return (
         <ul>{
             items.map((item, i) => (
-                <ListItemWithIcon icon={item.icon} text={item.text} key={i} small={small}/>
+                <ListItemWithIcon icon={item.icon} text={item.text} key={i}/>
             ))
         }</ul>
     )
