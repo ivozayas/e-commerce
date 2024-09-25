@@ -6,7 +6,7 @@ export default function ProductDescription({ name, id, categories, price, colors
     name: string,
     id: string,
     price: number,
-    categories: { text: string, icon?: JSX.Element }[],
+    categories: string[],
     colors: string[],
     children?: React.ReactNode
 }){    
@@ -18,19 +18,12 @@ export default function ProductDescription({ name, id, categories, price, colors
             </div>
 
             <div className="flex flex-row justify-between">
-                <ListWithIcon items={categories}/>
+                <ListWithIcon items={colors.map((color) => ({ text: color, icon: <ColorIcon color={color}/>}))} small/>
 
-                <ListWithIcon items={colorIcon(colors)}/>
+                <ListWithIcon items={categories.map((category) => ({ text: category}))} small/>
             </div>
 
             {children}
         </div>
     )
-}
-
-function colorIcon(colors: string[]){
-    return colors.map((color) => ({
-        text: color,
-        icon: <ColorIcon color={color}/>
-    }))
 }

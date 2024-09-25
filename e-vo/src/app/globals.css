@@ -15,13 +15,14 @@
 }
 
 html, body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
 }
 
 body {
   color: var(--foreground);
   background: #f1f5f9;
+  padding-bottom: 20px;
 }
 
 @layer utilities {
